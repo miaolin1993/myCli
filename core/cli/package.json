@@ -1,0 +1,44 @@
+{
+  "name": "@miaolin1993-cli/core",
+  "version": "1.0.8",
+  "description": "> TODO: description",
+  "author": "妙林 <miaolin1993@foxmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "bin": {
+    "mlcli": "bin/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./__tests__/core.test.js"
+  },
+  "dependencies": {
+    "@miaolin1993-cli/exec": "file:../exec",
+    "@miaolin1993-cli/get-npm-info": "file:../../utils/get-npm-info",
+    "@miaolin1993-cli/init": "file:../../commands/init",
+    "@miaolin1993-cli/log": "file:../../utils/log",
+    "colors": "^1.4.0",
+    "commander": "^10.0.0",
+    "dedent": "^0.7.0",
+    "dotenv": "^16.0.3",
+    "npmlog": "^7.0.1",
+    "path-exists": "^4.0.0",
+    "root-check": "^1.0.0",
+    "semver": "^7.4.0",
+    "user-home": "^3.0.0"
+  },
+  "gitHead": "5d1746582f4e8b64163c0d5db867c8d47aa5e692",
+  "devDependencies": {
+    "import-local": "^3.1.0"
+  }
+}
